@@ -20,3 +20,23 @@
 // Add a listener for click events so that when a user clicks on a card, the headline of the article is logged to the console.
 //
 // Use your function to create a card for each of the articles, and append each card to the DOM.
+
+//create axios get request here (building function first)
+
+//build component function for article cards
+
+function makeArticle(object) {
+  //create elements
+  const card = document.createElement("div");
+  const cardHeadline = document.createElement("div");
+  const cardAuthor = document.createElement("div");
+  const cardImgContainer = document.createElement("div");
+  const cardImg = document.createElement("img");
+  const cardSpan = document.createElement("span");
+
+  //add classes
+  card.classList.add("card");
+  cardHeadline.classList.add("headline");
+  cardAuthor.classList.add("autho");
+  cardImgContainer.classList.add("img-container");
+}
