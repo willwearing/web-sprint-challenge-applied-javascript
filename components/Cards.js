@@ -28,7 +28,7 @@ axios
   .then((response) => {
     console.log(response);
     //data coming back as an object, need to create an array so I can loop through and add to the function
-    elementsData = Object.values(response.data.articles);
+    const elementsData = Object.values(response.data.articles);
     //grab the main card container
     const cardsContainer = document.querySelector(".cards-container");
     //loop through array and loop again through each sub array
